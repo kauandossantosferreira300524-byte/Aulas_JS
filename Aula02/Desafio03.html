@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Kauan Ferreira">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>DESAFIO 03 - INTRODUÇÃO AO JAVASCRIPT</title>
+
+</head>
+<body>
+    <h1>DESAFIO 03 - AULA 02</h1>
+    <hr>
+    <div>
+        <img src="Neymar-Mirassol-Santos.jpg" alt="" title="Neymar1">
+        <button onclick="trocarImg()">TROCAR IMAGEM </button>
+    </div>
+
+
+
+    <script>
+    
+
+       const tags_div = document.getElementsByTagName('div')
+       console.log(tags_div);
+       let tag_div_1 = tags_div[0]
+       console.log(tag_div_1);
+       tag_div_1.style.backgroundColor="orange";
+       tag_div_1.style.border = "5px";
+
+       const tags_body = document.getElementsByTagName('body')
+       console.log(tags_body);
+       let tags_body_1 = tags_body[0]
+       console.log(tags_body_1);
+       tags_body_1.style.backgroundColor="purple";
+
+       function trocarImg(){
+        const tag_img = document.getElementsByTagName('img')[0];
+        tag_img.src="ney.avif";
+        tag_img.title="Neymar2"
+        
+       }
+
+
+
+
+
+       
+
+    </script>
+</body>
+</html>

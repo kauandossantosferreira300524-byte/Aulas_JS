@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Kauan Ferreira">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>AULA 02 - INTRODUÇÃO AO JAVASCRIPT</title>
+
+</head>
+<body>
+    <h1>DESAFIO 01 - AULA 02</h1>
+    <hr>
+    <div>
+        <p>Eu sou o Kauan</p>
+        <p>Amo minha mulher</p>
+        <p>Dia dos namoraDOS</p>
+    </div>
+
+    <script>
+       const tags_p = document.getElementsByTagName('p')
+       console.log(tags_p);
+       let tag_p_1 = tags_p[0]
+       console.log(tag_p_1);
+       tag_p_1.style.backgroundColor="red";
+       tag_p_1.style.color="white";
+       tag_p_1.style.textAlign="center";
+       tag_p_1.style.fontSize="25pt";
+
+       
+       
+       let tag_p_2 = tags_p[1]
+       console.log(tag_p_2);
+       tag_p_2.style.backgroundColor="purple";
+       tag_p_2.style.textAlign="center";
+       tag_p_2.style.fontSize="25pt"; 
+       
+       let tag_p_3 = tags_p[2]
+       console.log(tag_p_3);
+       tag_p_3.style.backgroundColor="pink";
+       tag_p_3.style.textAlign="center";
+       tag_p_3.style.fontSize="25pt";
+       tag_p_3.innerText = "SOMOS MUITO BONS DE RESENHA!!!" ;
+
+       document.write('<h2>UOUOUOUOOOU, <mark>JAVASCRIPT É MAIS OU MENOS!</mark></h2>')
+
+       const tags_div = document.getElementsByTagName('div')
+       console.log(tags_div);
+       let tag_div_1 = tags_div[0]
+       console.log(tag_div_1);
+       tag_div_1.style.backgroundColor="orange";
+       tag_div_1.style.border = "5px";
+
+       const tags_body = document.getElementsByTagName('body')
+       console.log(tags_body);
+       let tags_body_1 = tags_body[0]
+       console.log(tags_body_1);
+       tags_body_1.stle.backgroundColor="purple";
+
+       
+
+    </script>
+</body>
+</html>
